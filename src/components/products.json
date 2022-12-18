@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Christmas stocking",
+    "price": "$25",
+    "description": "Looking for the perfect stocking to hang by the chimney with care? Look no further! Our Christmas stocking is the perfect addition to your holiday décor."
+  },
+  {
+    "id": 2,
+    "title": "Personalized Christmas stocking",
+    "price": "$30",
+    "description": "Looking for the perfect stocking to hang by the chimney with care? Look no further! Our Christmas stocking is the perfect addition to your holiday décor."
+  },
+  {
+    "id": 3,
+    "title": "Christmas stocking",
+    "price": "$25",
+    "description": "Looking for the perfect stocking to hang by the chimney with care? Look no further! Our Christmas stocking is the perfect addition to your holiday décor."
+  }
+]

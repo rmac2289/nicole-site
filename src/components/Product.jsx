@@ -1,21 +1,22 @@
 import React from "react";
 import "./product.css";
 import stockings from "../assets/Subject.png";
+import { useParams } from "react-router-dom";
 
-export const Product = () => {
+export const Product = ({ items }) => {
+  // TODO: Figure out why data isn't coming through for dynamic routing
+  const { id } = useParams();
+  let singleItem = items.filter((item) => item.id === id);
+  console.log(singleItem);
   return (
     <div className="product">
       <div className="header">
-        <h3>Christmas stocking</h3>
-        <h3>$25</h3>
+        <h3>{title}</h3>
+        <h3>{price}</h3>
       </div>
       <div className="image">
-        <img src={stockings} alt="stockings" width="300" />
-        <p>
-          Looking for the perfect stocking to hang by the chimney with care?
-          Look no further! Our Christmas stocking is the perfect addition to
-          your holiday décor.
-        </p>
+        <img src={stockings} alt="stockings" />
+        <p>{description}</p>
       </div>
     </div>
   );
