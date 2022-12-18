@@ -1,0 +1,14 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+}

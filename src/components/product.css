@@ -1,0 +1,26 @@
+.product {
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.image {
+  display: flex;
+  justify-content: space-evenly;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(230, 230, 250);
+  padding: 0.5rem;
+  margin: 1rem;
+}
+p {
+  padding: 0.5rem;
+}
