@@ -8,8 +8,6 @@ import { Faq } from "./pages/Faq";
 import { Contact } from "./pages/contact";
 import ErrorPage from "./ErrorPage";
 import { Cart } from "./pages/Cart";
-import { Product } from "./components/Product";
-import items from "./components/products.json";
 
 const router = createBrowserRouter([
   {
@@ -28,18 +26,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/about",
+    path: "/contact",
     element: <Contact />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/cart",
     element: <Cart />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/product/:id",
-    element: <Product items={items} />,
     errorElement: <ErrorPage />,
   },
 ]);

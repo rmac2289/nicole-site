@@ -1,21 +1,27 @@
 import React from "react";
 import { Product } from "./product";
-import { Link } from "react-router-dom";
 import "./products.css";
 
-export const Products = ({ items }) => {
+export const Products = ({ data }) => {
   return (
     <div className="products">
-      {items.map((item) => {
+      {data.data.map((item) => {
+        console.log(item);
         return (
-          <Link key={item.id} to={`product/${item.id}`}>
-            <Product
-              title={item.title}
-              id={item.id}
-              description={item.description}
-              price={item.price}
-            />
-          </Link>
+          <Product
+            key={item.attributes.id}
+            title={item.attributes.title}
+            id={item.attributes.id}
+            description={item.attributes.description}
+            price={item.attributes.price}
+            imgUrl={item.attributes.image.data.attributes.formats.thumbnail.url}
+            width={
+              item.attributes.image.data.attributes.formats.thumbnail.width
+            }
+            height={
+              item.attributes.image.data.attributes.formats.thumbnail.height
+            }
+          />
         );
       })}
     </div>
